@@ -1,0 +1,32 @@
+[package]
+name = "cdsapi"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+readme = "README.md"
+description = "Rust client for the Copernicus Climate Data Store (CDS) API, inspired by the Python cdsapi library."
+keywords = ["cds", "copernicus", "ecmwf", "era5", "climate"]
+categories = ["api-bindings", "command-line-utilities"]
+rust-version = "1.85"
+documentation = "https://docs.rs/cdsapi"
+
+# Fill these in before publishing (recommended for crates.io):
+# repository = "https://github.com/hkwk/cdsapi"
+# homepage = "https://github.com/hkwk/cdsapi"
+
+include = [
+	"src/**",
+	"examples/**",
+	"Cargo.toml",
+	"README.md",
+	"LICENSE",
+	"NOTICE",
+]
+
+[dependencies]
+anyhow = "1.0"
+dirs = "6.0"
+indicatif = "0.17"
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
