@@ -10,9 +10,9 @@ categories = ["api-bindings", "command-line-utilities"]
 rust-version = "1.85"
 documentation = "https://docs.rs/cdsapi"
 
-# Fill these in before publishing (recommended for crates.io):
-# repository = "https://github.com/hkwk/cdsapi"
-# homepage = "https://github.com/hkwk/cdsapi"
+
+repository = "https://github.com/hkwk/cdsapi"
+homepage = "https://github.com/hkwk/cdsapi"
 
 include = [
 	"src/**",
